@@ -30,7 +30,7 @@ img {
 }
 
 body {
-  font-family: 'Roboto', sans-sefif;
+  font-family: "Roboto", sans-sefif;
   font-size: 14px;
   color: var(--primary-text-color);
 }
@@ -59,7 +59,7 @@ body {
   display: flex;
   align-items: center;
   gap: 30px;
-  margin-right: 340px;
+  margin-right: 300px;
 }
 
 .navigation,
@@ -77,6 +77,7 @@ body {
   gap: 50px;
 }
 .navigation,
+.navigation,
 .contacts {
   font-weight: 500;
   line-height: 1.14;
@@ -84,11 +85,11 @@ body {
 .logo {
   text-decoration: none;
   color: #000;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  margin-right: 90px;
+  margin-right: 63px;
   padding: 24px 0;
 }
 
@@ -111,8 +112,8 @@ body {
   padding: 32px 0;
   display: block;
 }
-.navigation-item.current{
-color: var(--accent-color);
+.navigation-item.current {
+  color: var(--accent-color);
 }
 
 .contacts-item {
@@ -121,6 +122,9 @@ color: var(--accent-color);
   font-weight: 500;
   padding: 32px 0;
   display: flex;
+  align-items: center;
+  gap: 10px;
+  fill: currentColor;
 }
 
 .contacts-item:hover,
@@ -137,6 +141,14 @@ color: var(--accent-color);
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -190,11 +202,24 @@ color: var(--accent-color);
   display: flex;
   gap: 30px;
 }
-.features-list > li {
+.features-item {
   display: block;
   width: 270px;
 }
-.features-item {
+.features-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background: var(--background-section-sub);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.features-icon {
+  display: block;
+}
+.features-title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -293,7 +318,7 @@ color: var(--accent-color);
 .logo-footer {
   text-decoration: none;
   color: var(--white);
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
