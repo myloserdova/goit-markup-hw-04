@@ -386,7 +386,7 @@ body {
   margin-left: 70px;
   width: 206px;
   height: 80px;
-  }
+}
 
 .follow {
   display: flex;
@@ -400,7 +400,7 @@ body {
   padding-top: 15px;
 }
 .footer-social {
-justify-content: left;
+  justify-content: left;
 }
 .footer > .container {
   display: flex;
@@ -457,8 +457,9 @@ justify-content: left;
 .filter-cards-item {
   background-color: var(--white);
 }
-.filter-cards-item:hover{
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.filter-cards-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .filter-text-container {
