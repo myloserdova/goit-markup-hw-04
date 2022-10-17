@@ -9,6 +9,7 @@
   --accent-color-hover: #188ce8;
   --border-color: #ececec;
   --border-secondary-color: #eeeeee;
+  --social-color: #afb1b8;
 }
 
 h1,
@@ -69,7 +70,9 @@ body {
 .gallery-list,
 .team-list,
 .filter-list,
-.filter-cards {
+.filter-cards,
+.social-list,
+.clients-list {
   list-style: none;
 }
 .navigation {
@@ -178,7 +181,8 @@ body {
   align-items: center;
   padding: 10px 32px;
 }
-.main-button:hover {
+.main-button:hover,
+.main-button:focus {
   background-color: var(--accent-color-hover);
 }
 
@@ -266,6 +270,32 @@ body {
   gap: 30px;
   align-items: center;
 }
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.social-list-container {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: var(--social-color);
+  fill: currentColor;
+}
+.social-list-container:hover,
+.social-list-container:focus {
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+.social-list-container:hover .team-social-icon,
+.social-list-container:focus .team-social-icon {
+  fill: var(--white);
+}
+
 .card-team-container {
   background-color: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -292,8 +322,34 @@ body {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-list {
+  display: flex;
+  gap: 30px;
+}
+.client-container {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  color: var(--social-color);
+  fill: currentColor;
+  border: 1px solid var(--social-color);
+}
+.client-container:hover,
+.client-container:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+  cursor: pointer;
+}
 .footer {
   background-color: var(--background-section-main);
   padding-top: 60px;
@@ -325,7 +381,37 @@ body {
   display: block;
   margin-bottom: 20px;
 }
+.social-block {
+  display: block;
+  margin-left: 70px;
+  width: 206px;
+  height: 80px;
+  }
 
+.follow {
+  display: flex;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+.footer-social {
+justify-content: left;
+}
+.footer > .container {
+  display: flex;
+}
+.footer-social .social-list-container {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social .social-list-container:hover,
+.footer-social .social-list-container:focus {
+  background-color: var(--accent-color);
+}
 /* portfolio */
 .filter {
   padding-top: 94px;
