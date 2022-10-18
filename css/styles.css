@@ -152,6 +152,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -242,8 +244,8 @@ body {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  width: fit-content;
-  margin: 0px auto 50px auto;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .gallery {
@@ -389,7 +391,6 @@ body {
 }
 
 .follow {
-  display: flex;
   color: var(--white);
   font-weight: 700;
   font-size: 14px;
@@ -397,13 +398,17 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
-  padding-top: 15px;
+  
 }
 .footer-social {
   justify-content: left;
 }
+.footer-icon{
+  fill: var(--white);
+}
 .footer > .container {
   display: flex;
+  align-items: baseline;
 }
 .footer-social .social-list-container {
   background-color: rgba(255, 255, 255, 0.1);
@@ -456,6 +461,8 @@ body {
 
 .filter-cards-item {
   background-color: var(--white);
+  text-decoration: none;
+  display: block;
 }
 .filter-cards-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
